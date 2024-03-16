@@ -1,24 +1,98 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+        <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+        <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+        <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
 
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+              <!-- 4. create another section add a form that takes in the following input:
+                a. name
+                b. email address
+                c. phone number
+                d. age
+                e. radio checkbox for gender (use fieldset to group the gender input)
+                f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
+                g. password
+                h. a hidden field to capture sessionId
+                i. cancel button that clears form inputs
+                j. submit button with text register
+                make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
+              -->
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" constant="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>welcome</h1>
+    <p>This is trying out the red css format alongside the font size of 15px.</p>
+
+    <!--a link that opens a new tab to an external resource= ??-->
+    <a href="http://slozzyondul.pythonanywhere.com/register" target="_blank">check out more</a><br><br>
+
+    <!-- section with styled imge-->
+    <section  class="image-container">
+      <img src="https://images.pexels.com/photos/920689/pexels-photo-920689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="night_sky_filled_with_stars_under_a tree_image" width="500" height="500">
+    </section>
+
+    <h1>Registration form</h1>
+
+    <div class="form-container">
+      <section>
+        <form id="registration-form" action="http://slozzyondul.pythonanywhere.com/">
+          <label for="name">name: </label>
+          <input type="text" id="name" name="name" required><br><br>
+  
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required><br><br>
+      
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+      
+          <label for="age">age:</label>
+          <input type="number" id="age" name="age" min="1" max="150" required><br><br>
+  
+          <fieldset>
+            <legend>gender: </legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">female</label>
+          </fieldset><br>
+  
+          <label for="subjects">subjects:</label>
+          <select id="subjects" name="subjects[]" multiple required>
+            <option value="english">english</option>
+            <option value="math">math</option>
+            <option value="science">science</option>
+            <option value="art_and_craft">art and craft</option>
+            <option value="agriculture">agriculture</option>
+            <option value="geography">geography</option>
+            <option value="history">history</option>
+          </select><br><br>
+  
+          <label for="password">password</label>
+          <input type="password" id="password" name="password" required><br><br>
+  
+          <input type="hidden" id="sessionId" name="sessionId" value="session_id_key_from_the_database">
+  
+          <button type="button" onclick="clearForm()">cancel</button>
+          <input type="submit" value="register">
+          
+        </form>
+      </section>
+  
+
+    </div>
+     
+  </body>
+
+</html>
