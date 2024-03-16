@@ -2,13 +2,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     font-family: 'Poppins', sans-serif;
 }
 
 body, html {
-    height: 100%;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,23 +31,38 @@ body, html {
     padding-block-start: 0;
 }
 .header-section {
-    background-color: powderblue;
+    background-color: rgba(255, 255, 255, 0.76);
     margin-top: 0;
     border-radius: 10px 10px 0 0;
 }
 .blue-heading {
+    color: blue;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 .red-paragraph {
-    max-width: 400px;
-    display: inline-block;
+    color: red;
+    font-size: 15px;
+    max-width: inherit;
+    justify-content: center;
     text-align: center;
-
+    align-items: center;
+    font-style: oblique;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
+.registration-link, .registration-link-text {
+    font-family: fantasy;
+    font-palette: dark;
+    display: flex;
+    max-width: inherit;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 @keyframes slideIn {
     0% {
         opacity: 0;
@@ -60,21 +73,19 @@ body, html {
         transform: translateY(0);
     }
 }
-.blue-heading {
-    color: blue;
-}
-
-.red-paragraph {
-    color: red;
-    font-size: 15px;
-}
 
 .image-section img {
     width: 500px;
     height: 500px;
     border: 2px solid green;
-}
+    justify-content: center;
+    max-width: inherit;
 
+}
+.image-section {
+    justify-content: center;
+    display: grid;
+}
   .cancel-pushable {
       position: relative;
       border: none;
