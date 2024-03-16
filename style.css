@@ -66,3 +66,6 @@ button{
     color: white;
     transition: all ease-in-out .3s;
 }
+select{
+    margin-top: 20px;
+}
