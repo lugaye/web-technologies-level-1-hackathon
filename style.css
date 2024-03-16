@@ -1,1 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Truculenta;
+    background-color: black;
+    color: white;
+}
 
+h1, u{
+    color: red;
+    text-align: center;
+}
+p, p u{
+    color: blue;
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: 30px auto;
+}
+form div{
+    width: full;
+    margin-top: 20px;
+}
+input{
+    outline: none;
+    border: 1px solid white;
+    padding: 3px 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+label, legend{
+    padding-left: 10px
+}
+fieldset{
+    margin-top: 20px;
+    border-radius: 10px;
+    display: grid;
+    align-items: left:
+}
+fieldset input{
+    width: 10px;
+    margin-left: 20px;
+}
+fieldset div{
+    display: flex;
+}
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    gap: 20px;
+}
+.submit, .cancel:hover{
+    background: white;
+    border: 1px solid white; 
+    color: black;
+    transition: all ease-in-out .3s;
+}
+.cancel, .submit:hover{
+    background: transparent;
+    border: 1px solid white; 
+    color: white;
+    transition: all ease-in-out .3s;
+}
