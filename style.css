@@ -1,1 +1,36 @@
+h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+    font-size: 15px;
+  }
+  /* styling for the image */
+  .image-container {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+    overflow: hidden; /*ensure no overflowing*/
+  }
+  .image-container img {
+    width: 100%;
+    height: auto; /*maintain aspect ratio*/
+    display: block; /*get rids of any default spacing*/
+  }
+  body {
+    background-image: url('https://images.pexels.com/photos/920689/pexels-photo-920689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  /* Styling for the form container */
+.form-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px; /* Adjust the width as needed */
+    padding: 50px; /* Add some padding for spacing */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color for better readability */
 
+}
