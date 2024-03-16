@@ -1,24 +1,84 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Chronicles</title>
 
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Hello, My name is <u>Allan Njoroge</u></h1>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <p>
+    I am a <u>student at PLP</u>, taking their <u>Software Developer Bootcamp</u> and so far it's nothing short of what I expected.
+    <br>
+    I love making new friends. I you would like to become friends, fill in the form below
+  </p>
 
+  <form action="" method="post">
+    <div>
+      <label for="fullName">Full Name</label>
+      <input type="text" placeholder="John Doe" id="fullName">
+    </div>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <div>
+      <label for="email">Email</label>
+      <input type="email" placeholder="JohnDoe@gmail.com" id="email">
+    </div>
 
+    <div>
+      <label for="phoneNumber">Phone Number</label>
+      <input type="text" placeholder="+254700056642" id="phoneNumber">
+    </div>
+    
+    <div>
+      <label for="age">Age</label>
+      <input type="number" placeholder="20" id="age" min=1>
+    </div>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <fieldset>
+      <legend>Gender</legend>
+      <div>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="preferNotToSay">
+        <label for="preferNotToSay">Prefer not to say</label>
+      </div>
+    </fieldset>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <label for="Subject">Choose a subject</label>
+    <select name="" id="">
+      <option value="english">English</option>
+      <option value="maths">Maths</option>
+      <option value="science">Science</option>
+      <option value="artAndCraft">Art and Craft</option>
+      <option value="agriculture">Agriculture</option>
+      <option value="geography">Geography</option>
+      <option value="history">History</option>
+    </select>
+
+    <div>
+      <label for="Password">Password</label>
+      <input type="password" placeholder="password" id="Password">
+    </div>
+
+    <div>
+      <label for="sessionId">Session ID</label>
+      <input type="password" placeholder="456789" id="sessionId">
+    </div>
+
+    <div>
+      <button type="submit" class="submit">Register</button>
+      <button type="reset" class="cancel">Cancel</button>
+    </div>
+  </form>
+</body>
+</html>
