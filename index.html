@@ -1,24 +1,97 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="image/hackathon.jpeg" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="banner-text">
+                <h1>Hello;</h1>
+                <p>I'm Victor Kanja.</p>
+                <p>Welcome to Web Technologies Hackathon.</p>
+            </div>
+            <div class="banner-image">
+                <img src="image/landing.jpg" alt="landing image">
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="wrapper">
+                <div class="foo-footer">
+                    <div class="foo-email">
+                        <label class="form-label">Subscribe to email list</label>
+                        <div class="form-control">
+                            <input class="form-field" type="email" placeholder="Your Email">
+                            <button class="btn-submit" type="submit">Subscribe</button>
+                        </div>
+                    </div>
 
+                    <div class="foo-logo">
+                        <a href="#header">
+                            <img src="image/hackathon.jpeg" alt="logo image">
+                        </a>
+                    </div>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+                    <div class="foo-links">
+                        <ul>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="/gallery.html">Gallery</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="foo-call">
+                        <span>Call</span>
+                        <span style="font-size: 1.2rem;">+254769689386</span>
+                    </div>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+                    <div class="foo-social">
+                        <span>Follow</span>
+                        <a href="#blank">
+                            <img src="image/facebook.png" alt="facebook icon">
+                        </a>
+                        <a href="">
+                            <img src="image/github.png" alt="github icon">
+                        </a>
+                        <a href="#blank">
+                            <img src="image/instagram.png" alt="instagram icon">
+                        </a>
+                        <a href="">
+                            <img src="image/linkedin.png" alt="linkedin icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="foo-text">
+                <span>Made with ❤️ in &#x1F1F0;&#x1F1EA; © 2024 Victor Kanja. All rights reserved.</span>
+                <hr>
+                <span>Privacy Policy</span>
+                <hr>
+                <span>Terms and Conditions</span>
+            </div>
+        </div>
+    </footer>
+</body>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+</html>

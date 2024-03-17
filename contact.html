@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <?php
+require('data.php')
+?>
+ -->
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="image/hackathon.jpeg" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <div id="contact-page">
+            <h1 class="contact-header">Contact Us</h1>
+
+            <section class="first">
+                <h2>Contact Information</h2>
+                <p>
+                    We'd love to here from you!
+                </p>
+                <ul class="section-image">
+                    <li>
+                        <figure>
+                            <img src="image/phone-solid.svg" alt="Phone Icon" width="30px" height="30px">
+                            <figcaption>+254769689386</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="image/envelope-solid.svg" alt="Email Icon" width="30px" height="30px">
+                            <figcaption>kagurikanja@gmail.com</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="image/location-dot-solid.svg" alt="Location Icon" width="30px" height="30px">
+                            <figcaption>Nairobi, Kenya</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="second">
+                <form action="" method="get">
+                    <div>
+                        <!--Nested Input Field -> This binds the label implicity to the input tag and removes the need to use for(label) and id(input) attribute -->
+                        <label class="custom-field">
+                            <input type="text" name="firstName" required>
+                            <span class="placeholder">First Name</span>
+                        </label>
+                        <!--  <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>-->
+                    </div>
+                    <div>
+                        <label class="custom-field">
+                            <input type="text" name="lastName" required>
+                            <span class="placeholder">Last Name</span>
+                        </label>
+                    </div>
+                    <div class="email">
+                        <label class="custom-field">
+                            <input type="email" name="email" required>
+                            <span class="placeholder">Email</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="custom-field">
+                            <input type="tel" name="tel" required>
+                            <span class="placeholder">Phone Number</span>
+                        </label>
+                    </div>
+                    <div id="form-message">
+                        <label for="message" class="custom-field">
+                            <span class="placeholder">Message</span>
+                        </label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="fullwidth">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter" class="small-label">Receive our newsletter?</label>
+                    </div>
+                    <div class="fullwidth">
+                        <button type="submit">Send Message</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="wrapper">
+                <div class="foo-footer">
+                    <div class="foo-email">
+                        <label class="form-label">Subscribe to email list</label>
+                        <div class="form-control">
+                            <input class="form-field" type="email" placeholder="Your Email">
+                            <button class="btn-submit" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+
+                    <div class="foo-logo">
+                        <a href="#header">
+                            <img src="image/hackathon.jpeg" alt="logo image">
+                        </a>
+                    </div>
+
+                    <div class="foo-links">
+                        <ul>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="/gallery.html">Gallery</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="foo-call">
+                        <span>Call</span>
+                        <span style="font-size: 1.2rem;">+254769689386</span>
+                    </div>
+
+                    <div class="foo-social">
+                        <span>Follow</span>
+                        <a href="#blank">
+                            <img src="image/facebook.png" alt="facebook icon">
+                        </a>
+                        <a href="">
+                            <img src="image/github.png" alt="github icon">
+                        </a>
+                        <a href="#blank">
+                            <img src="image/instagram.png" alt="instagram icon">
+                        </a>
+                        <a href="">
+                            <img src="image/linkedin.png" alt="linkedin icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="foo-text">
+                <span>Made with ❤️ in &#x1F1F0;&#x1F1EA; © 2024 Victor Kanja. All rights reserved.</span>
+                <hr>
+                <span>Privacy Policy</span>
+                <hr>
+                <span>Terms and Conditions</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
