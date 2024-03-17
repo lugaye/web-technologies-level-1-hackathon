@@ -25,12 +25,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon Portal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo-nulled.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dX/Pm5L+5W9U7PjgEmNj4r/3MBJz4y8/vnYddWx2oXE5vSv+Jid6bSbJZhBhZPEp8h0uV3NoSqP7Y3TvQgWJnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div class="container">
@@ -68,31 +67,42 @@
 
     <!-- 4. Form section -->
     <section class="form-section">
-        <form action="#" method="POST" class="form">
-            <div class="column">
-                <h2>One</h2>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+        <form action="index.html" method="post">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+            <fieldset>
+
+                <legend><span class="number">1</span> Your Basic Info</legend>
+                <hr>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email">
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
+                <input type="tel" id="phone" name="phone_number">
 
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required><br><br>
-            </div>
-            <div class="column">
-                <h2>Two</h2>
-                <fieldset>
-                    <legend>Gender:</legend>
-                    <label><input type="radio" name="gender" value="male">Male</label>
-                    <label><input type="radio" name="gender" value="female">Female</label>
-                </fieldset><br>
+                <input type="number" id="age" name="user_age">
 
+            </fieldset>
+
+            <fieldset>
+                <label>Gender:</label>
+                <input type="radio" id="male" value="male" name="user_gender"><label for="male" class="light">Male</label>
+                <input type="radio" id="female" value="female" name="user_gender"><label for="female" class="light">Female</label>
+                <input type="radio" id="other" value="other" name="user_gender"><label for="other" class="light">Other</label>
+            </fieldset>
+
+            <fieldset>
+
+                <legend> <span class="number">2</span>Profile Information</legend>
+                <hr>
                 <label for="subjects">Subjects:</label>
-                <select id="subjects" name="subjects[]" multiple>
+
+                <p>You can select more than one subject.</p>
+
+                <select id="subjects" name="user_subjects[]" multiple>
                     <option value="english">English</option>
                     <option value="math">Math</option>
                     <option value="science">Science</option>
@@ -100,20 +110,29 @@
                     <option value="agriculture">Agriculture</option>
                     <option value="geography">Geography</option>
                     <option value="history">History</option>
-                </select><br><br>
+                </select>
 
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
+                <input type="password" id="password" name="user_password">
 
-                <input type="hidden" name="sessionId" value="123456789">
-            </div>
-
-            <div class="buttons">
-                <div class="centred-div">
-                    <button class="cancel" role="button" type="reset">Cancel</button>
-                    <button class="register" role="button" type="submit">Register</button>
+                <div class="password-requirements">
+                    <p>Password must meet the following requirements:</p>
+                    <ul>
+                        <li>At least 8 characters long</li>
+                        <li>Contain at least one uppercase letter</li>
+                        <li>Contain at least one lowercase letter</li>
+                        <li>Contain at least one number</li>
+                        <li>Contain at least one special character</li>
+                    </ul>
                 </div>
-            </div>
+
+            </fieldset>
+
+            <input type="hidden" name="sessionId" value="SESSION-ID-HERE">
+
+            <button class="cancel" role="button" type="reset">Cancel</button>
+            <button class="register" role="button" type="submit">Register</button>
+
         </form>
     </section>
 </div>
