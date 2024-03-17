@@ -8,7 +8,10 @@
 
 body, html {
     justify-content: center;
-    align-items: center;
+}
+
+.header-section {
+    background-color: powderblue;
 }
 .logo {
     max-width: inherit;
@@ -20,17 +23,9 @@ body, html {
 }
 .container {
     animation: slideIn 0.5s ease-out;
-    border-radius: 10px;
-    aspect-ratio: 1/1;
-    width: inherit;
-    padding-block-start: 0;
 
 }
-.header-section {
-    background-color: rgba(255, 255, 255, 0.76);
-    margin-top: 0;
-    border-radius: 10px 10px 0 0;
-}
+
 .centered-div {
     display: flex;
     justify-content: space-evenly;
@@ -82,19 +77,14 @@ body, html {
 .image-section img {
     width: 500px;
     height: 500px;
-    border: 5px solid green;
+    border: 2px solid green;
+    border-radius: 7px;
     justify-content: center;
 
 }
 .image-section {
     justify-content: center;
-    display: grid;
-}
-
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    display: flex;
 }
 
 form {
@@ -104,7 +94,7 @@ form {
 }
 
 h1 {
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
     text-align: center;
 }
 
