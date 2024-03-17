@@ -7,11 +7,8 @@
 }
 
 body, html {
-    display: block;
     justify-content: center;
     align-items: center;
-    background-color: darkslategray;
-    background-blend-mode: luminosity;
 }
 .logo {
     max-width: inherit;
@@ -24,10 +21,8 @@ body, html {
 .container {
     animation: slideIn 0.5s ease-out;
     border-radius: 10px;
-    border: 1px solid hsla(228, 93%, 45%, 0.73);
     aspect-ratio: 1/1;
-    width: auto;
-    background-color: whitesmoke;
+    width: inherit;
     padding-block-start: 0;
 
 }
@@ -103,11 +98,9 @@ body, html {
 }
 
 form {
-    max-width: inherit;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: #f4f7f8;
-    border-radius: 8px;
+    max-width: max-content;
+    margin: auto;
+    padding: 0;
 }
 
 h1 {
@@ -130,7 +123,6 @@ select {
     width: 100%;
     background: #e8eeef;
     color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin: 0 0 30px;
 }
 
