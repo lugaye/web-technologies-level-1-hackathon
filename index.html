@@ -1,24 +1,165 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osborn Nyakaru</title>
+    <link rel="stylesheet" href="merge.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <a href="#"><h1>Osborn <span>!</span></h1></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Explore</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+        <section class="homepage" id="home">
+            <div class="home-content">
+                <h1 class="blue-heading">The beginning of the AI revolution and Machine Learning</h1><br><br><br>
+                <p>The AI revolution signifies a transformative era characterized by technological advancements, ubiquitous <span>applications across diverse domains, and a focus on automation and efficiency. While it brings </span>immense opportunities for innovation and productivity enhancement, it also raises ethical, social, <span>and economic considerations, necessitating responsible development, regulation, and</span> collaboration to ensure equitable outcomes. The evolution of AI is continuous, driven by ongoing<span> research, interdisciplinary collaboration, and a focus on addressing societal challenges while</span> pushing the boundaries of what is achievable with intelligent systems.</p> <br><br>
+                <div class="btn-box">
+                    <a href="https://www.britannica.com/technology/artificial-intelligence" target="_blank"><button type="" class="btn">Explore</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="about">
+            <div class="image-section about-img">
+                <img src="img.png" alt="" width="500px" height="500px">
+            </div>
+            <div>
+                <div class="about-text">
+                    <h1><span>Transformative</span> AI</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate enim repellat sequi ducimus veritatis recusandae ex voluptas maxime deleniti esse quia fugit possimus inventore earum nam nemo, iste illum perferendis, quo doloremque. Saepe?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam asperiores necessitatibus officiis facere suscipit corrupti ad neque et?</p>
+                    <div class="btn-box">
+                        <a href="https://www.britannica.com/technology/artificial-intelligence" class="btn">Discover</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-home-content">
+                <div class="home-imgHover"></div>
+                <span class="animate home-img" style="--i:7;"></span>
+            </div>
+        </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
 
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="number" placeholder="Age" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </fieldset>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <label for="subjects">Subjects:</label>
+                    <div class="dropdown">
+                      <div class="dropdown-content">
+                        <label><input type="checkbox" value="English"> English</label>
+                        <label><input type="checkbox" value="Math"> Math</label>
+                        <label><input type="checkbox" value="Science"> Science</label>
+                        <label><input type="checkbox" value="Art and Craft"> Art and Craft</label>
+                        <label><input type="checkbox" value="Agriculture"> Agriculture</label>
+                        <label><input type="checkbox" value="Geography"> Geography</label>
+                        <label><input type="checkbox" value="History"> History</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="focus"></span>
+                  </div>
+                  
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" id="password" name="password" placeholder="Password"><br>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="hidden" id="sessionId" name="sessionId" value="123456"><br>
+                    <span class="focus"></span>
+                </div>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Register</button>
+                <button type="button" class="btn" onclick="clearForm()">Cancel</button>
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+        </form>
+    </section>
 
+     <!-- footer design -->
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+     <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Osborn | All Rights Reserved.</p>
+            <span class="animate scroll" style="--i:1;"></span>
+        </div>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <div class="footer-iconTop">
+            <a href="#"><ion-icon name="arrow-up"></ion-icon></a>
+
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+
+    </footer>
+
+    <script>
+        function clearForm() {
+        // Get all input elements within the form
+        var inputElements = document.getElementsByTagName("input");
+
+        // Loop through each input element
+        for (var i = 0; i < inputElements.length; i++) {
+            // Check if the input element is of type text, password, or textarea
+            if (inputElements[i].type === "text" || inputElements[i].type === "password" || inputElements[i].type === "number" || inputElements[i].type === "textarea" ) {
+                // Clear the value of the input element
+                inputElements[i].value = "";
+            }
+        }
+    }
+
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
