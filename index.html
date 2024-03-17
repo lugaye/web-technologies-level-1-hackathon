@@ -68,40 +68,46 @@
 
     <!-- 4. Form section -->
     <section class="form-section">
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <form action="#" method="POST" class="form">
+            <div class="column">
+                <h2>One</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+            </div>
+            <div class="column">
+                <h2>Two</h2>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </fieldset><br>
 
-            <fieldset>
-                <legend>Gender:</legend>
-                <label><input type="radio" name="gender" value="male">Male</label>
-                <label><input type="radio" name="gender" value="female">Female</label>
-            </fieldset><br>
+                <label for="subjects">Subjects:</label>
+                <select id="subjects" name="subjects[]" multiple>
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                </select><br><br>
 
-            <label for="subjects">Subjects:</label>
-            <select id="subjects" name="subjects[]" multiple>
-                <option value="english">English</option>
-                <option value="math">Math</option>
-                <option value="science">Science</option>
-                <option value="art">Art and Craft</option>
-                <option value="agriculture">Agriculture</option>
-                <option value="geography">Geography</option>
-                <option value="history">History</option>
-            </select><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
+                <input type="hidden" name="sessionId" value="123456789">
+            </div>
 
-            <input type="hidden" name="sessionId" value="123456789">
             <div class="buttons">
                 <div class="centred-div">
                     <button class="cancel" role="button" type="reset">Cancel</button>

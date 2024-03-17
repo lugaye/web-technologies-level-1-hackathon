@@ -297,7 +297,7 @@ body, html {
 .buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: auto;
     height: auto;
 }
@@ -324,7 +324,46 @@ body, html {
     background-color: #007bff;
 }
 
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border: 4px solid hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
 
+
+.column {
+    display:flex;
+    flex-flow: wrap;
+    gap:2rem;
+}
+.column > * {
+    width:50%;
+    padding:1rem;
+}
+
+/* Additional styling for form elements */
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section input[type="number"],
+.form-section input[type="password"],
+.form-section select,
+.form-section fieldset {
+    width: calc(100% - 20px);
+    border: 1px solid #031231;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*
 .form-section {
     background: #f9f9f9;
     border: 1px solid #c1c1c1;
@@ -332,7 +371,7 @@ body, html {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     display: block;
     text-align: center;
     align-items: center;
@@ -378,3 +417,4 @@ input:focus {
     }
 
 }
+*/
