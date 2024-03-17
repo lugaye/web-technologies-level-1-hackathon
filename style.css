@@ -1,1 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* --bg-color: #025d6d;
+    --second-bg-color: #02697b; 
+    --text-color: #ededed;
+    /* --main-color: #b4b4b4; */
+    /* --main-color: #687bfc;  */
+    --bg-color: #242526;
+    --second-bg-color:#3f4041;
+    --third-bg-color:#969898;
+    --text-color:#ededed;
+    --main-color: orangered;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem 9%;
+    color: white;
+    background: #2a2a2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header h1, 
+section h1 {
+    font-size: 5.5rem;
+    color: blue;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(images/home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.homepage::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba((0), 0, 0, 0.2);
+}
+.homepage span {
+    color: red;
+}
+
+.homepage p {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    color: red;
+}
+
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
+
+
+/* Styling for blue heading */
+.blue-heading {
+    color: blue;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+span {
+    color: orangered;
+}
+/* About(more ) section*/
+/* Styling for image section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 4rem;
+}
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    padding: 0%;
+}
+.image-section img {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+.about-text h1 {
+    font-weight: 700;
+    color: blue;
+    /* text-transform: uppercase; */
+    font-size: 5.5rem;
+}
+
+.about-text p {
+    margin: 0.5rem 0 1.4rem;
+    color: white;
+}
+
+.about-text .btn {
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.about-text .btn:hover {
+    background-color: var(--main-color);
+}
+
+.contact {
+    min-height: 100vh;
+    padding-bottom: 7rem;
+}
+
+.contact h2{
+    display: inline-block;
+    left: 50%;
+    transform: translateX(75%);
+    font-size: 5.5rem;
+    color: blue;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100rem;
+    margin: 0 auto;
+    text-align: center;
+
+}  
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    line-height: 1;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field label {
+    font-size: 15px;
+}
+
+.contact form .input-box .input-field input, 
+.contact form .input-box .input-field fieldset, 
+.contact form .input-box .input-field .dropdown {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    align-items: end;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+
+.contact form .input-box .input-field select {
+    width: 100%;
+    height: 30%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color); 
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder  {
+    color: var(--text-color);
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus {
+    width: 100%;
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+
+fieldset {
+    display: grid;
+    align-items: end;
+    font-size: 1.6rem;
+    gap: 1rem;
+}
+legend {
+    font-size: 1.6rem;
+}
+section p {
+    margin: 0.5rem 0 1.4rem;
+    font-size: 2.5rem;
+    color: #E50914;
+}
+
+/* Button box */
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+    
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: orangered;
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: red;
+}
+
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before{
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text,
+.footer-iconTop{
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover:before {
+    width: 100%;
+}
+
+
+.footer-iconTop a ion-icon {
+    font-size: 2.4rem;
+    color: black;
+}
+
+.footer-iconTop a:hover ion-icon {
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .about div {
+        padding: 5px;
+    }
+    
+    .contact {
+        padding: 20px;
+    }
+}
