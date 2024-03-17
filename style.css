@@ -13,6 +13,7 @@ body, html {
 .header-section {
     background-color: powderblue;
     max-width: inherit;
+    margin: 0;
 }
 .logo {
     max-width: inherit;
