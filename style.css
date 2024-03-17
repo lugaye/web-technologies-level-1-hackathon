@@ -1,1 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+body, html {
+    justify-content: center;
+}
+
+.header-section {
+    background-color: powderblue;
+    max-width: inherit;
+    margin: 0;
+}
+.logo {
+    max-width: inherit;
+    max-height: 150px;
+    display: flex;
+    image-rendering: optimizeSpeed;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    animation: slideIn 0.5s ease-out;
+
+}
+
+.centered-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: inherit;
+    text-align: center;
+}
+.blue-heading {
+    color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+    max-width: inherit;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-style: oblique;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.registration-link, .registration-link-text {
+    font-family: fantasy;
+    font-palette: dark;
+    display: flex;
+    max-width: inherit;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    padding-bottom: 5px;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-section img {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    border-radius: 7px;
+    justify-content: center;
+
+}
+.image-section {
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    max-width: max-content;
+    margin: auto;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background: #e8eeef;
+    color: #8a97a0;
+    margin: 0 0 30px;
+}
+
+input[type="radio"] {
+    margin: 0 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+select[multiple] {
+    height: auto !important;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgb(255, 255, 255) inset;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #012a69;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+    form {
+        max-width: 480px;
+    }
+
+}
+
+.password-requirements {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.password-requirements ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.password-requirements li {
+    margin-bottom: 5px;
+}
+
+.cancel {
+    color: #FFFFFF;
+    background-color: #c20808;
+    border-color: #FFFFFF;
+}
+
+.register {
+    color: #FFFFFF;
+    background-color: #18863d;
+    border-color: #FFFFFF;
+}
