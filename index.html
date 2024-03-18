@@ -22,3 +22,58 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Welcome to my Website!</header>
+  <p>This is my first hackathon, I used HTML and CSS to develop it.</p>
+  <p>To learn more about me click <a href="/about" target="_blank">here</a></p>
+  <img src="">
+  <section>
+    <img src="nature 3.jpg" alt="Diani beach" class="image">
+  </section>
+  <h4>Fill in the form below.</h4>
+  <form action="data.php" method="get" enctype="multipart/form-data">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="John Doe" required><br><br>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" placeholder="me@gmail.com" required><br><br>
+<label for="contact">Phone Number:</label>
+<input type="tel" id="phoneno" name="phoneno" placeholder="0700000000" min="0" max="14" data-type="number"required><br><br>
+<label for="age">Age:</label>
+<input type="number"name="age" placeholder="Age" min="18" max="65" required>
+<fieldset>
+  <legend>Gender</legend>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="gender">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="gender">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="gender">Other</label>
+  <input type="radio" id="binary" name="gender" value="binary">
+  <label for="gender">Prefer not to say</label>
+  </fieldset><br><br>
+<label for="subjects">Subjects</label>
+<select name="subjects" id="subjects" multiple>
+  <option value="mathematics">Mathematics</option>
+  <option value="english">English</option>
+  <option value="science">Science</option>
+  <option value="art">Art and Craft</option>
+  <option value="agric">Agriculture</option>
+  <option value="geo">Geography</option>
+  <option value="hist">History</option>
+</select><br><br>
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Enter your Password" aria-label="password" aria-describedby="password-hint"><br><br>
+<input type="hidden" id="sessionId" name="sessionId"><br><br>
+<input type="button" value="Cancel" onclick="clearForm()" class="button">
+<input type="submit" value="Register" class="submit">
+  </form>
+</body>
+</html>

@@ -1,1 +1,105 @@
-
+body{
+  padding-bottom: 300px;
+  background-color: rgb(212, 196, 227);
+}
+header{
+  color: rgb(83, 83, 215);
+  font-weight: 800;
+font-size: 30px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.image{
+  width: 500px;
+  height: 500px;
+  border:  solid rgb(155, 223, 155);
+  border-width: 2px;
+}
+p{
+  color: rgb(228, 101, 101);
+  font-size: 15px;
+  font-family: monospace;
+}
+h4{
+  padding-left: 70px;
+}
+form{
+  width: 500px;
+  margin: 0 auto;
+}
+label{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="password"]{
+  border-radius: 3px;
+  border: solid;
+  border-color: whitesmoke;
+height: 30px;
+}
+input[type="number"]{
+border: solid;
+border-color: whitesmoke;
+border-radius: 2px;
+height: 20px;
+}
+#subjects{
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+.submit{
+  background-color: rgb(156, 156, 219);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-left: 150px;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+.submit:hover{
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+.button{
+background-color: aliceblue;
+cursor: pointer;
+transition: opacity 0.15s;
+margin-left: 20px;
+width: 100px;
+height: 40px;
+border: none;
+border-radius: 50px;
+}
+.button:hover{
+  background-color: rgb(156, 156, 219);
+  opacity: 0.7;
+}
+/* responsive design for smaller screens*/
+@media(max-width:600px){
+  form{
+    max-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  form input,
+  form select {
+    width: 90%;
+  }
+}
+@media (max-width: 300px) {
+  form input[type="button"],
+  form input[type="submit"] {
+    width: 100%;
+    margin-right: 0;
+  }
+}
