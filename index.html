@@ -1,24 +1,88 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackthon for Michael</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Welcome to Contact Centre</h1>
+        <p>This website features images related to nature, and recreation.</p>
+    </header>
+    
+<nav>
+  <ul>
+    <li><a href="#gallery">Gallery</a></li>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <li><a href="#registration">Registration</a></li>
+  </ul>
+</nav>
 
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <a href="https://tinyurl.com/bdhm68af" target="_blank">
+            <img src="dandelion_image.jpg" alt="Dandelion Mist">
+        </a>
+        <a href="https://tinyurl.com/3k4j7n84" target="_blank">
+            <img src="plant_image.jpg" alt="Young Plant">
+        </a>
+        <a href="https://tinyurl.com/2ckmer4b" target="_blank">
+            <img src="sunset.jpg" alt="Sunset on Mountains">
+        </a>
+    </div>
+</section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+<section id="registration">
+    <h3>Registration</h3>
+    <p>Make sure to complete all relevant fields of the form.</p>
 
+    <form action="#" method="post" id="EntryForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+        <label for="Enter your email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <label for="Enter telephone number">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+
+        <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <br>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+        </fieldset>
+
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects" required>
+            <option value=""></option>
+            <option value="english">English</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="art and craft">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+        </select>
+
+        <label for="sessionId">sessionId:</label>
+        <input hidden="" id="sessionId" name="sessionId" required>
+
+        <button type="submit">Register</button>
+        <button type="button" class="cancel">Cancel</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 PLP Hackthon</p>
+</footer>
+
+</body>
+</html>
