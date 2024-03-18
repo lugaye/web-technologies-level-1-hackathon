@@ -35,6 +35,10 @@ body {
     overflow: hidden;
 }
 
+.favicon {
+    color: orangered;
+}
+
 header {
     position: fixed;
     top: 0;
