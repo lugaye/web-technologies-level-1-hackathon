@@ -1,1 +1,13 @@
 
+.heading{
+	color:blue;
+}
+.paragraphy{
+	color: red;
+	font-size: 15px;
+}
+.image{
+	border: 5px solid green;
+	width: 500px;
+	height: 500px;
+}
