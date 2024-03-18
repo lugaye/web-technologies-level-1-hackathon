@@ -1,1 +1,78 @@
+/* Header Styling */
+header {
+    background-color: #b9b8b8;
+    font: size 15px; ;
+    padding: 20px;
+    color: rgb(160, 190, 255);
+}
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+/* paragraph Styling */
+h1 {
+    background-color: black;
+    color: rgb(240, 90, 90);
+    box-sizing: content-box;
+}
+/* Image Styling */
+img {
+    border: 3px solid #4bda38;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+  }
+  
+/* Introduction Section Styling */
+.introduction {
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+}
+
+form {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0d4d4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="radio"] + label {
+    border-radius: 30%;
+    width: 20px;
+    height: 20px;
+}
+fieldset{
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.cancel {
+    background-color: #db4545;
+}
