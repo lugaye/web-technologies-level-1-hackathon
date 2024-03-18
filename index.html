@@ -22,3 +22,66 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLP HACKATHON</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <h1>HACKATHON SUBMISSION:</h1>
+  <p>Take a break from reality.</p>
+  <a href="https://orteil.dashnet.org/cookieclicker/" id="cookielink"> Here's something to relax your mind :) </a>
+  <section class="game">
+  </section>
+  <section class="input-form">
+
+    <form action="" class="feedback">
+      <caption>FEEDBACK FORM:</caption>
+      <label for="name">Name:</label>
+      <input type="text"  id="name" name="name" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      
+      <label for="gender">GENDER:</label>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Prefer not to specify</label>
+    
+    
+      <label for="ratings">Rating:</label>
+      <select id="ratings" name="ratings" multiple required>
+          <option value="positive02">Absolutely amazing</option>
+          <option value="positive01">Pretty fun</option>
+          <option value="positive00">Not bad</option>
+          <option value="negative00">Not good</option>
+          <option value="negative01">Could be better</option>
+          <option value="negative02">Very boring</option>
+      </select>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="hidden" id="sessionId" name="sessionId" value="your-session-id">
+      
+      <button type="button" onclick="clearForm()">Cancel</button>
+      <button type="submit">Register</button>
+
+      
+
+    </form>
+  </section>
+</body>
+</html>

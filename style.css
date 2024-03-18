@@ -1,1 +1,70 @@
+html {
+    background-image: url('./pexels-laura-tancredi-7078619.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+}
 
+body {
+    text-align: center; 
+}
+
+h1 {
+    color: rgb(84, 98, 226);
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+#cookielink {
+    text-decoration: none;
+    color: #0000eefd;
+    border: 1px solid #0000EE; 
+    border-radius: 5px; 
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+#cookielink:hover {
+    background-color: #0000ee67;
+    color: #FFFFFF; 
+}
+
+
+.game {
+    margin: 0 auto; 
+    margin-top: 30px;
+    background-image: url('./Screenshot\ \(93\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border: 3px solid green;
+}
+
+.input-form {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.feedback {
+    width: 500px;
+    background-color: #133fa08c;
+    color: white;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+label, input, select {
+    display: block; 
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto; 
+}
