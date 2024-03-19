@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  background-image: url("https://pixlr.com/images/index/product-image-one.webp");
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+  background-position: center;
+  /* Center the background image */
+  background-size: cover;
+  /* Resize the image to cover the entire viewport */
+}
+
+.about-us-container {
+  padding: 100px;
+  margin: 100px;
+  border: 100px;
+  font-weight: 700;
+  background-color: blanchedalmond;
+  opacity: 0.75;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+  /* Adjust spacing for headings */
+}
+
+p {
+  line-height: 1.5;
+  /* Adjust line spacing for better readability */
+  margin-bottom: 15px;
+  /* Adjust spacing for paragraphs */
+}
+
+button {
+  background-color: #f03e7a;
+  /* Adjust button color */
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Indicate clickable element */
+}
+
+footer {
+  background-color: #24241d;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
