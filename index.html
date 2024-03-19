@@ -1,24 +1,62 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <a href="https://www.example.com/school" target="_blank">
+                <img src="image/school.jpg" alt=" school building" class="gallery">
+            </a>
+        </section>
+        <section>
+            <form action="" method="get" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="text" name="Name" placeholder="Enter your name" required>
+                <br>
+                <label for="email">Email address:</label>
+                <input type="text" id="email" name="Email address" >
+                <br>
+                <label for="phone number">Phone number:</label>
+                <input type="text" id="mobile" name="Phone number" required>
+                <br>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="Age" required> 
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="Gender" value="male">
+                    <label>Male</label>
+                    <br>
+                    <input type="radio" id="female" name="Gender" value="female">
+                    <label>Female</label>
+                </fieldset>
+                <br>
+                <label>Subjects</label>
+                <select id="Subjects" name="Subjects" multiple>
+                    <option value=""></option>
+                    <option value="english">English</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Science">Science</option>
+                    <option value="art">Art</option>
+                    <option value="geography">Geography</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="craft">Craft</option>
+                    <option value="history">History</option>
+                </select>
+                <br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" required>
+                <input type="hidden" name="seasonid" value="seasonid">
+                <br>
+                <button type="button">Cancel</button>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
