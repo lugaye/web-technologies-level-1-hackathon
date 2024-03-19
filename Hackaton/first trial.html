@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSE ART CLUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Mrs+Saint+Delafield&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="IMAGE1.jpeg">
+    <link rel="stylesheet" href="style.css">
+    </header>
+
+<body>
+
+    <section class="content-container">
+        <div>
+            <div class="about-us-container">
+                <h1>✨🎨 Welcome to MUSE ART CLUB! 🎨✨</h1>
+                <p>“Every artist dips his brush in his own soul, and paints his own nature into his pictures.” – Henry
+                    Ward Beecher.<br> </p>
+                <p>Read more about us on our <a href="about-us.html" target="_blank">About Us</a> page.</p>
+                <p>Fill below to become part of our vibrant community! and Let's paint the world with colors of
+                    creativity together! </p>
+            </div>
+
+            <img src="IMAGE1.jpeg" alt="Image description" width="500" height="500">
+        </div>
+
+        <section class="form-container">
+            <h2>Sign up!</h2>
+            <form action="#" class="signup-form">
+
+                <div class="form-column">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-column">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-column">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-row">
+                    <span>Gender:</span>
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </div>
+
+                <div class="form-column">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </div>
+
+
+
+                <div class="form-column">
+                    <label for="subjects">Subjects Majors:</label>
+                    <select id="subjects" name="subjects" multiple>
+                        <option value="english">English</option>
+                        <option value="math">Math</option>
+                        <option value="science">Science</option>
+                        <option value="art">Art and Craft</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="geography">Geography</option>
+                        <option value="history">History</option>
+                    </select>
+                </div>
+
+                <div class="form-column">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <input type="hidden" name="sessionId" value="12345">
+
+                <button type="reset">Cancel</button>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </section>
+
+    <p2>JOIN NOW, TO GET EXCLUSIVE ACCESS</p2>
+
+    <footer>
+        <p>Copyright 2024 MUSE ART CLUB</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+h1 {
+    color: rgb(73, 73, 220);
+    /* Blue color */
+    font-family: cursive;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    font-size: 22px;
+}
+
+p {
+    color: rgb(150, 25, 25);
+    /* Red color */
+    font-size: 15px;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* Specify a font family */
+
+}
+
+.about-us-container {
+    font-size: 15px;
+    width: 500px;
+    padding-left: 25px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+img {
+    border: 5px solid #32CD32;
+    margin: 50;
+    padding: 20px;
+    background-color: rgb(142, 19, 87);
+}
+
+.form-container {
+    flex: center;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px;
+    padding: 50px 20px 10px 50px;
+    margin: 5px;
+    background-color: #dca4a4;
+    color: black;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(142, 19, 87);
+    color: #fff;
+    font-size: 16px;
+}
+
+button[type="reset"] {
+    padding: 10px 20px;
+    border: 1px solid rgb(142, 19, 87);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #dae2ec;
+    color: rgb(142, 19, 87);
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(142, 19, 87);
+}
+
+button[type="reset"]:hover {
+    background-color: rgba(142, 19, 87, 0.135);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-column input[type="text"],
+.form-column input[type="email"],
+.form-column input[type="tel"],
+.form-column input[type="number"],
+.form-column input[type="password"],
+.form-column select {
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#phone {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form select {
+    border: 1px solid #fefefe;
+    padding: 4px;
+    margin-bottom: 5px;
+    /* Add space between label and input */
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-row select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-row select[multiple] {
+    height: 80px;
+}
+
+.form-row select option {
+    padding: 5px;
+}
+
+.form-row select[multiple] option:checked {
+    background-color: #e0e0e0;
+}
+
+nav a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+footer {
+    background-color: #dca4a4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+p2 {
+    font-size: 20px;
+    font-weight: 0;
+    font-style: normal;
+    font-family: "Knewave", cursive;
+    color: rgb(142, 19, 87);
+}
