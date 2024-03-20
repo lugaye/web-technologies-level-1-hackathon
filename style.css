@@ -1,1 +1,32 @@
 
+p{
+    color: red;
+    font-size:30 px;
+   }
+   #blue h1 {
+    color: blue;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    
+   .red{
+       color: red;
+       font-size: 45px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+   }
+   .container{
+       width: 800px;
+       height: 500px;
+       padding: 25px;
+       margin: 45px;
+       border: 10px solid green;
+   }
+   .container img
+   {
+       display: block;
+       width: 500px;
+       height: 500px;
+       margin: 0 auto;
+   }
+
