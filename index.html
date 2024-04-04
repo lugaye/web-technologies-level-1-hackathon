@@ -1,24 +1,143 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#header-info" target="_blank">Header</a></li>
+      <li><a href="#registration-form" target="_blank">Contact me</a></li>
+      <li><a href="#footer-div" target="_blank">Find me</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div id="header-info">
+      <h1>Web Dev</h1>
+      <p>Need a website?? I am your guy 😉</p>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+      <a href="https://www.nature.com/" target="_blank">Read more</a>
+    </div>
 
+    <section id="image">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.eW7H9s0JD9Pb0_1_YQyNSwAAAA&pid=Api&P=0&h=220" alt="image" width="500px" height="500px">
+    </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  </header>
+  <section>
+    <div class="form-card1">
+      <div class="form-card2">
+        <form class="form" id="registration-form">
+          <p class="form-heading">Registration Form</p>
 
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input required="" placeholder="Name" class="input-field" type="text" id="name" name="name" />
+          </div>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+          <div class="form-field">
+            <label for="email">Email:</label>
+            <input required="" placeholder="Email" class="input-field" type="email" id="email" name="email" />
+          </div>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+          <div class="form-field">
+            <label for="phone">Phone Number:</label>
+            <input required="" placeholder="Phone Number" class="input-field" type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-field">
+            <label for="age">Age:</label>
+            <input required="" placeholder="Age" class="input-field" type="number" id="age" name="age" />
+          </div>
+
+          <fieldset class="form-field">
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="subjects">Subjects:</label>
+            <select class="input-field" multiple id="subjects" name="subjects[]">
+              <option value="English">English</option>
+              <option value="Math">Math</option>
+              <option value="Science">Science</option>
+              <option value="Art and Craft">Art and Craft</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Geography and History">Geography and History</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password:</label>
+            <input required="" placeholder="Password" class="input-field" type="password" id="password"
+              name="password" />
+          </div>
+
+          <input type="hidden" name="sessionId" id="sessionId" value="YourSessionIdHere">
+
+          <div class="form-field">
+            <button type="button" class="cancel-btn" onclick="clearForm()">Cancel</button>
+            <button type="submit" class="register-btn">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-div">
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/mothusi-mathuloe">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/atum97">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/mothusi-mathuloe">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.github.com/mothusim">
+            <ion-icon name="logo-github"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#nav" target="_blank">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#header-info" target="_blank">Visit this site</a></li>
+        <li class="menu__item"><a class="menu__link" href="registration-form" target="_blank">Contact me</a></li>
+  
+      </ul>
+      <p>&copy;2024 Mothusi Mathuloe | All Rights Reserved</p>
+    </footer>
+
+  </div>
+
+  <script>
+    function clearForm() {
+      document.getElementById("registration-form").reset();
+    }
+    
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

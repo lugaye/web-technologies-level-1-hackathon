@@ -1,1 +1,392 @@
+/* general */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: #000;
+    color: #ccd6f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: green;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+header {
+    background-color: #171717;
+    padding: 0 5em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+  color: blue;
+  font-weight: bold;
+}
+
+header p {
+  color: red;
+}
+
+header a {
+  color: green;
+  font-size: 15px;
+}
+#header-info{
+
+  padding: 10em 2em
+}
+
+section {
+    text-align: center;
+    /* padding: 2em; */
+}
+
+#image{
+  border: 4px solid green;
+  margin: 2em 0;
+  
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    margin: 2em;
+    border-radius: 20px;
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin: 2em;
+    /* color: #64ffda; */
+    color: green;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+  }
+  
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+  }
+  
+  .sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .form-card1 {
+    background-image: linear-gradient(360deg, green 0%, #090d0c 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  }
+  
+  .form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  }
+  
+  .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+
+
+/* Radio button styling */
+
+.radio-container {
+    margin: 0 auto;
+    max-width: 300px;
+    color: white;
+  }
+  
+  .radio-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .radio-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .radio-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+  }
+  
+  .radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .radio-label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  /* Style the select dropdown */
+.input-field select {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding: 0.6em;
+    border-radius: 10px;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+/* Style the select dropdown options */
+.input-field select option {
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 0.6em;
+}
+
+button{
+  background-color: green;
+  color: white;
+  width:fit-content;
+  height: 2em;
+  padding: 0.25em;
+  border-radius: 20%;
+}
+
+/* Footer */
+#footer-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 10em;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: green;
+  min-height: 100px;
+  padding: 1.5em 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
 
