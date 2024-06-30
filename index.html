@@ -1,24 +1,123 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallpaper"></div>
+    <div class="content">
+        <aside class="side">
+            <figure class="picture">
+                <div class="shadow"></div>
+                <img id="image" class="image" src="images/back.jpg" alt="kelvin's picture" height="320" width="320">
+            </figure>
+            <br>
+        </aside>
+        <main class="about">
+            <h1 id="name">Hello, I'm Njuguna Kelvin</h1>
+            <p id="soft">I'm a Software Developer</p>
+            <hr>
+            <div>
+                <p>Vin is a dedicated web developer who designs and crafts engaging websites with a focus on creativity and user experience. 🌐💻.I literally talk to computers.</p>
+            </div>
+            <div class="contact">
+                <a id="btn" href="mailto:njugunak349@gmail.com"><b>Get in touch</b></a>
+            </div>
+            <section class="education">
+                <h2 id="titles">Education</h2>
+                <ul>
+                    <li><strong>Full stack Software Development</strong>, <br>Power Learn Project,<br> may-Ongoing</li>
+                    <br>
+                    <li><strong>Bachelor of Science in Computer Science</strong>, <br>Kenyatta University,<br> 2022-Ongoing</li>
+                    <br>
+                    <li><strong>High School Diploma</strong>,<br> Kilimo High School,<br>Attained B+ <br> 2017-2021</li>
+                    <br>
+                    <li><strong>Primary School Certificate</strong>,<br> Tengecha Primary School,<br>Attained 335/500 <br> 2017-2021</li>
+                    <hr>
+                </ul>
+            </section>
+            <section class="experience">
+                <h2 id="titles">Experience and Skills</h2>
+                <p>I'm currently on my learning Journey and i haven't worked
+                    in any organisation so far. However based on my below projects, I'm sure
+                hiring me would be a total Jackpot for you.<br> Hit me Up. </p>
+                <p>Currently, these here are my skills:</p>
+                <ol>
+                    <li>HTML % CSS</li>
+                    <li>Javscript</li>
+                    <li>Version Control( Git and Command Prompt)</li>
+                    <li>Microsoft Office Professional(access, word, excel, powerpoint, publisher)</li>
+                    <li>Google Workspace(Drive, Docs, Mails..)</li>
+                    <li>Python with Django</li>
+                </ol>
+                <p>Some of the Industry Expertise I possess inllude:</p>
+                <ol>
+                    <li>System Design and Analysis</li>
+                    <li>Testing and Quality Assurance</li>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                </ol>
+                <br>
+                <a href="projects/Ng'ang'a Kelvin Njuguna's Resume.pdf" download="Ng'ang'a Kelvin Njuguna's Resume.pdf">
+                    <button id="projbtn">Download Resume</button>
+                </a>
+            </section>
+            <hr>
+            <section>
+              <h2 id="titles">Featured Projects</h2>
+              <div>
+                <h4 id="projname">HEALTH FIRST WEB APP</h4>
+                <img src="images/health.jpg" width="70%" id="slide">
+                <br>
+                <p>Health First is a web application designed to promote personal health tracking and wellness management. It provides users with tools to monitor their daily 
+                  activities, nutrition intake, and overall health metrics. This Project is still under Development</p>
+                <a href="projects/Health/health.html">
+                  <button id="projbtn">Click to View</button>
+                </a>
+              </div>
+              <br><br><hr>
+              <div>
+                <h4 id="projname">SIMPLE CALCULATOR</h4>
+               <img src="images/calc.jpg" width="70%" height="400px" id="slide">
+               <br>
+               <p>This is just a simple calculator project. This is my first project i did after i just learned 
+                javascript.
+               </p>
+               <a href="projects/simple calculator/calculator.html">
+                    <button id="projbtn">Click to View</button>
+               </a>
+              </div>
+            </section>
+            <div id="contactme">
+                <h2 id="titles">Contact Me</h2>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               <a href="https://github.com/NjugunaKelvin">
+                <img src="images/git.jpg" height="55px" width="50px">
+               </a>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               <a href="https://x.com/ZenithKelvin">
+                <img src="images/x.jpg" height="50px" width="50px">
+               </a>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               <a href="https://instagram.com/zenith.vin">
+                <img src="images/gram.jpg" height="50px" width="50px">
+               </a>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               <a href="mailto:njugunak349@gmail.com">
+                <img src="images/mail.jpg" height="50px" width="50px">
+               </a>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               <a href="tel:+254798517776">
+                <img src="images/phone.jpg" height="50px" width="50px">
+               </a>
 
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        
+            </div>
+        </main>
+    </div>
+    <script src="port.js"></script>
+</body>
+</html>
