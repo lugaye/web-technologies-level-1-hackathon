@@ -1,3 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML structure</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      h1 {
+        color: blue;
+      }
+      p {
+        color:red;
+        font-size: 15px;
+      }
+      .image-section {
+        border: 2px solid green;
+        padding: 10px;
+        max-width: 500px;
+        max-height:500pxth 
+        margin:20px 0;
+      }
+      .image-section img {
+        display:block;
+        max-width:100%;
+        height: auto;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        fieldset {
+            margin-bottom: 12px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-actions button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .form-actions button[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <h1> </h1>
+    <p> This is a simple html structure</p>
+    <a href="https://google.com">visit google.</a>
+    <section class="image-section">
+      <img src="image.jpg" alt="Image description" width="500" height="500">
+    </section>
+    <form id="registration-form" action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <small>Format: 1234567890</small>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+        </fieldset>
+
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects[]" multiple size="5" required>
+            <option value="english">English</option>
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here">
+
+        <div class="form-actions">
+            <button type="reset">Cancel</button>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+ </body>
+   </html>
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
 
