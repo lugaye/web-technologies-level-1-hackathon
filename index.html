@@ -1,24 +1,136 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<body>
+  <header>
+    <h1>Simon Muchiri</h1>
+  </header>
 
+  <section id="bio">
+    <h2>Bio</h2>
+    <p>Hello! I'm Simon Muchiri, a passionate urban planner and web developer with a knack for creating engaging and
+      user-friendly websites. With a background in Urban and Regional Planning and Software Development, I enjoy
+      transforming ideas into digital reality and solving urban challenges. I am proficient in spatial data analysis and
+      design using CAD. I am a tech enthusiast with a passion for data science and machine learning technologies.</p>
+  </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Expense Tracker App</h3>
+      <p>
+        A web application that allows users to track their expenses and manage their budget. Built with HTML, CSS, and
+        JavaScript. Implemented features like adding, editing, and deleting expenses, and visualizing spending habits with
+        charts.
+      </p>
+      <img src="path/to/expense-tracker-screenshot.jpg" alt="Expense Tracker Screenshot">
+      <p>
+        <a href="link-to-live-demo" target="_blank">Live Demo</a> |
+        <a href="link-to-github-repo" target="_blank">GitHub Repository</a>
+      </p>
+    </div>
+    
+  </section>
 
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, Django</li>
+      <li>MySQL database</li>
+      <li>Data Analysis</li>
+      <li>Geographic Information Systems - Spatial analysis and mapping</li>
+    </ul>
+    <h3>Non-Technical Skills</h3>
+    <ul>
+      <li>Team collaboration</li>
+      <li>Project management</li>
+      <li>Problem-solving</li>
+    </ul>
+  </section>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Physical Planner at GGIL</h3>
+    <p>2023 - present</p>
+    <p>Preparation of physical plans, land subdivisions, data collection and analysis.</p>
+    <h3>Research Consultant at WRI, Africa</h3>
+    <p>January 2023 - December 2024</p>
+    <p>Guided the team on data collection and analysis, global and local expert lead consultations, and mapping.</p>
+    <h3>Web Developer Intern at Web Creators</h3>
+    <p>May 2024 - present</p>
+    <p>Assisting in the development of client websites, performing tasks such as coding, testing, and debugging. Gained
+      hands-on experience with HTML, CSS, and JavaScript.</p>
+  </section>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+  <section id="education">
+    <h2>Education</h2>
+    <h3>Software Development</h3>
+    <p>Power Learn Project, May 2024 - present</p>
+    <h3>Bachelor of Urban and Regional Planning</h3>
+    <p>University of Nairobi, 2015-2019</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via:</p>
+    <div class="contact-info">
+      <a href="mailto:simonnderitu@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+      <a href="https://www.linkedin.com/in/simon-nderitu-858189164/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://github.com/SimonNderitu" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://www.instagram.com/symonderitu/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://x.com/twitt_login?lang=en" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+    </div>
+  </section>
+
+  <section id="additional">
+    <h2>Additional Elements</h2>
+    
+  <section id="form">
+    <h2>Registration Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br><br>
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+      </fieldset><br>
+      <label for="subjects">Subjects:</label>
+      <select id="subjects" name="subjects" multiple required>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art-craft">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+      </select><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <input type="hidden" id="sessionId" name="sessionId" value="12345">
+      <button type="reset">Cancel</button>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+
+</html>
