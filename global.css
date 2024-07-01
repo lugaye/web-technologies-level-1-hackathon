@@ -1,0 +1,50 @@
+body {
+  font-family: "fira code", monospace;
+  margin: 0;
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white);
+}
+
+p {
+  color: var(--gray);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+
+
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--white);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: var(--primary);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}

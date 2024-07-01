@@ -1,24 +1,362 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>johnthiongo.com</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<body>
 
+    <!-- header -->
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="logo-wrapper">
+                <a href="#navbar"><img src="./assets/Logo.svg" alt="Website logo" class="logo-img"></a>
+                <a href="#navbar">
+                    <h1 class="logo">Thiongo</h1>
+                </a>
+            </div>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+            <ul id="nav-list" class="nav-list">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Works</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">About-me <i class="fas fa-caret-down" style="color: white;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#about" class="dropdown-link">About</a></li>
+                        <li><a href="#Education" class="dropdown-link">Education</a></li>
+                        <li><a href="#experience" class="dropdown-link">experience</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+            <img id="burger-icon" src="./assets/burger-icon.svg" alt="burger-icon" class="burger-icon">
+        </nav>
+    </header>
 
+    <!-- social-links side-bar -->
+    <div class="social-links">
+        <div class="social-links-line"></div>
+        <ul>
+            <li><a href="https://github.com/Johnnytash" target="_blank"><img src="./assets/Github.svg"
+                        alt="Github icon"></a></li>
+            <li><a href="https://discordapp.com/channels/@me/966235059457753109/" target="_blank"><img
+                        src="./assets/Discord.svg" alt="Discord icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/john-wanja-836028293/" target="_blank"><img
+                        src="./assets/Linkedin.svg" alt="Linkedin icon"></a></li>
+            <li><a href="https://t.me/+254111384918" target="_blank"><img src="./assets/Telegram.svg"
+                        alt="Telegram icon"></a></li>
+        </ul>
+    </div>
+    <!-- Main -->
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <main>
+        <div class="main-container">
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+            <!-- hero section -->
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <h2>Thiongo is a <span>Web</span> and <span>Software Developer</span></h2>
+                    <p>
+                        Thiongo is a skilled web and software developer, creating innovative digital solutions. He
+                        excels in
+                        both front-end and back-end technologies, ensuring high-quality, responsive websites and robust
+                        software applications.
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=254111384918" target="_blank">
+                        <button class="contant-button">Contact Me !!</button>
+                    </a>
+
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/thiongoimage.jpg" alt="photo of thiongo" class="thiongo">
+                    <div class="portfolio-note-wrapper">
+                        <div class="purple-square"></div>
+                        <p class="portfolio-note">Currently Working as a <span>freelancer</span> and a student at
+                            <span>Power Learn Project</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- quote section -->
+            <section id="quote" class="quote">
+                <blockquote>Life would be easier if I had the source code.</blockquote>
+                <figcaption>- Unknown</figcaption>
+            </section>
+
+            <!-- projects-section -->
+            <section id="projects" class="projects">
+                <div class="section-header">
+                    <h2>projects</h2>
+                    <a class="projects-links" href="https://github.com/Johnnytash" target="_blank">View all ~~></a>
+                </div>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="./assets/movit-company.png" alt="screenshot of project Movit">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="project-info">
+                            <h3>Movit</h3>
+                            <p>Moving Company</p>
+                            <div class="project-links">
+                                <button><a href="https://johnnytash.github.io/moving-company/" target="_blank">Live <~>
+                                    </a></button>
+                                <button><a href="https://github.com/Johnnytash/moving-company" target="_blank">Cached
+                                        >=</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/tindog.png" alt="screenshot of project Tindog">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="project-info">
+                            <h3>Tindog</h3>
+                            <p>Tinder for Dogs</p>
+                            <div class="project-links">
+                                <button><a href="https://johnnytash.github.io/tindog/" target="_blank">Live <~>
+                                    </a></button>
+                                <button><a href="https://github.com/Johnnytash/tindog" target="_blank">Cached
+                                        >=</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/landingpage.png" alt="screenshot of project Jewelry store">
+                        <ul>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="project-info">
+                            <h3>Mangata and Gallo</h3>
+                            <p>Jewelry store</p>
+                            <div class="project-links">
+                                <button><a href="https://johnnytash.github.io/jewelry-store-landing-page"
+                                        target="_blank">Live <~></a></button>
+                                <button><a href="https://github.com/Johnnytash/jewelry-store-landing-page"
+                                        target="_blank">Cached >=</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- skills section -->
+            <section id="skills" class="skills">
+                <div class="section-header">
+                    <h2>skills</h2>
+                </div>
+                <div class="skills-content">
+                    <img src="./assets/skills-image.svg" alt="Illustration image of skills">
+                    <div class="skill-cards">
+                        <div class="skill-group">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                    <li>TypeScript</li>
+                                    <li>Solidity</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Non-Technical Skills</h4>
+                                <ul>
+                                    <li>Communication</li>
+                                    <li>Problem-Solving</li>
+                                    <li>Teamwork</li>
+                                    <li>Time Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="skill-category">
+                                <h4>Databases</h4>
+                                <ul>
+                                    <li>MYSQL</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Other</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>EJS</li>
+                                    <li>SCSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <ul>
+                                    <li>VSCode</li>
+                                    <li>Linux</li>
+                                    <li>Version Control</li>
+                                    <li>NPM</li>
+                                    <li>Chrome Developer Tools</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frameworks</h4>
+                                <ul>
+                                    <li>React.JS</li>
+                                    <li>Django</li>
+                                    <li>jQuery</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="section-header">
+                    <h2>about</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello, i'm Thiongo!<br><br>A web and software developer with a passion for
+                            creating robust and user-friendly web applications. I specialize in combining innovative
+                            technology with creative design to deliver solutions that exceed client expectations<br><br>
+                            I thrive in dynamic environments where I can continuously learn and grow, staying updated
+                            with the latest industry trends. Whether working on the front end or back end, my goal is to
+                            build seamless and efficient digital experiences.</p>
+                        <a href="https://github.com/Johnnytash" target="_blank"> <button>Read more -></button></a>
+                    </div>
+                    <img src="./assets/thiongoimage.jpg" alt="about-image" class="thiongo">
+                </div>
+            </section>
+            <section id="Education" class="Education">
+                <div class="section-header">
+                    <h2>Education</h2>
+                </div>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p>Mount Kenya University, 2020-2024</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Junior Software Developer Certificate</h3>
+                        <p>Power Learn Project, 2024-present</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-item">
+                        <h3>Freelance Web Developer</h3>
+                        <p>2022 - Present</p>
+                        <p>Developed and maintained multiple client websites, ensuring responsive design and seamless
+                            user experience.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Software Development Intern</h3>
+                        <p>XYZ Company, 2021 - 2022</p>
+                        <p>Assisted in the development of internal tools and applications, collaborating with senior
+                            developers and learning best practices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacts Section -->
+            <section id="contacts" class="contacts">
+                <div class="section-header">
+                    <h2>Contacts</h2>
+                </div>
+                <div class="contacts-contents">
+                    <p>I'm always excited to connect and discuss new projects or opportunities. Feel free to reach out
+                        to me for any inquiries, collaborations, or just to say hello. Let's bring your ideas to life!
+                    </p>
+                    <div class="contacts-card">
+                        <h4>Message me here</h4>
+                        <div class="contact">
+                            <img src="./assets/Discord.svg" alt="Discord icon">
+                            <span><a href="https://discordapp.com/channels/@me/966235059457753109/"
+                                    target="_blank">john_thiongo</a></span>
+                        </div>
+                        <div class="contact">
+                            <img src="./assets/Email.svg" alt="Email icon">
+                            <span> <a href="mailto:johnthiongo@protonmail.com"
+                                    target="_blank">johnthiongo@protonmail.com</a></span>
+                        </div>
+                        <div class="contact">
+                            <i style="margin-left: 4px;" class="fas fa-phone"></i>
+                            <a style="margin-left: 4px; " href="tel:+254111384918">+254 111 384 918</a>
+                        </div>
+                        <div class="contact">
+                            <a href="https://www.linkedin.com/in/john-wanja-836028293/" target="_blank"><img
+                                    src="./assets/Linkedin.svg" alt="Linkedin icon"></a>
+                            <span><a href="https://www.linkedin.com/in/john-wanja-836028293/">john wanja</a></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo-wrapper">
+                        <div class="footer-logo">
+                            <a href="#navbar"><img src="./assets/Logo.svg" alt="logo image">
+                            </a>
+                            <a href="#navbar">
+                                <h4>Thiongo</h4>
+                            </a>
+                        </div>
+                        <a href="mailto:johnthiongo@protonmail.com">johnthiongo@protonmail.com</a>
+                    </div>
+
+                </div>
+                <div class="footer-media">
+                    <h3>Media</h3>
+                    <a href="https://www.linkedin.com/in/john-wanja-836028293/" target="_blank"><img
+                            src="./assets/Linkedin.svg" alt="Linkedin icon"></a>
+                    <a href="https://github.com/Johnnytash" target="_blank"><img src="./assets/Github.svg"
+                            alt="Github icon"></a>
+                    <a href="https://discord.com/" target="_blank"><img src="./assets/Discord.svg"
+                            alt="Discord icon"></a>
+                </div>
+                <div style="color: var(--primary);" class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Nairobi, Kenya.</p>
+                </div>
+            </div>
+            <p class="copyright">© 2024 John Thiongo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<!-- JavaScript -->
+<script src="./script.js"></script>
+
+</html>
