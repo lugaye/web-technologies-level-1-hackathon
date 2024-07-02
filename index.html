@@ -1,24 +1,65 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="windth=device-width, initial-scale=1.0">
+        <title>Hackathon</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>My Hackthon Assignment</h1>
+        <p>This is my Simple HTML document</p>
+        <a href="google.com" target="_blank">Visit Google</a>
+        <section>
+            <img src="Cow 2.jpg" width="500" height="500" alt="Cow Image">
+        </section><br>
+        <section>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+              
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+              
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Start with your country code" required><br><br>
+              
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+              
+                <fieldset>
+                  <legend>Gender:</legend>
+                  <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label><br>
+                  <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label><br>
+                  <label for="prefer-not-to-say"><input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say"> Prefer not to say</label><br>
+                </fieldset><br>
+              
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject">
+                  <option value="english">English</option>
+                  <option value="math">Math</option>
+                  <option value="science">Science</option>
+                  <option value="art and craft">Art and Craft</option>
+                  <option value="agriculture">Agriculture</option>
+                  <option value="geography">Geography</option>
+                  <option value="history">History</option>
+                </select><br><br>
+              
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required><br><br>
+              
+                <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here"><br><br>
+              
+                <button type="submit">Register</button>
+                <button type="button" onclick="resetForm()">Cancel</button>
+              </form>
+        </section><br>
+        <footer>
+        <p style="color: white";>&copy; 2024 PLPAcademy. All rights reserved.</p>
+        <p><a href="mailto:joshjox@proton.me">Contact us</a></p>
+        <h3>Follow us</h3>
+        <p><a href="x.com/joshmwilenga">Twitter</a></p>
+        <p><a href="instagram.com">Instagram</a></p>
+      </footer>
+    </body>
+</html>

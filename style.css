@@ -1,1 +1,26 @@
 
+head{
+    color: blue;
+}
+p{
+    color: red;
+    font-size: 15px;
+}
+img{
+    border-color: green;
+}
+form{
+    color: white;
+    border-radius: 0%;
+    border-color: blueviolet;
+}
+body{
+
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: chartreuse;
+}
+footer{
+    color: white;
+    background-color: blue;
+}
