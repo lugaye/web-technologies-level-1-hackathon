@@ -1,24 +1,369 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Friendly Living.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Eco-Friendly Living: Tips and Tools for a Sustainable Lifestyle</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#contact information">Contact Information</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section id="home">
+        <h2>1. Home</h2>
+        <p>
+          In an era of increasing environmental awareness, adopting an
+          eco-friendly lifestyle has become more important than ever. This guide
+          offers practical tips and innovative tools to help you reduce your
+          carbon footprint and live more sustainably. From energy conservation
+          to waste reduction, every small step counts towards a greener future."
+        </p>
+      </section>
+      <br />
+      <section id="about">
+        <h2>2. About</h2>
+        <p>
+          Embracing an eco-friendly lifestyle is a journey of continuous
+          improvement. By implementing these tips and utilizing sustainable
+          tools, you can significantly reduce your environmental impact.
+        </p>
+        <p>
+          Remember, every action counts, and collective efforts can lead to
+          substantial positive change for our planet.
+        </p>
+      </section>
+      <br />
+      <section id="links">
+        <h2>3. Links</h2>
+        <p>From sources across the web:</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.transformationholdings.com/environment/living-an-eco-friendly-lifestyle/"
+              target="_blank"
+              >Living an Eco-Friendly Lifestyle: Tips for Everyday Habits</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=E2kSym9bcCM"
+              target="_blank"
+              >Help The Environment By Going GREEN (Eco-Friendly Lifestyle)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.unep.org/explore-topics/resource-efficiency/what-we-do/sustainable-lifestyles"
+              target="_blank"
+              >Sustainable lifestyles</a
+            >
+          </li>
+        </ul>
+      </section>
+      <br />
+      <section id="images">
+        <h2>4.Images.</h2>
+        <figure>
+          <img
+            src="C:\Users\hp\Downloads\pexels-mdsnmdsnmdsn-1702335.jpg"
+            alt="Eco-friendly lifestyle"
+            width="500"
+            height="500"
+          />
+          <figcaption>
+            A representation of an Eco-Friendly Environment
+          </figcaption>
+        </figure>
+      </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+      <section id="forms">
+        <h2>5. Forms</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+            <label for="sustainability pledge message"
+              >Sustainability Pledge Message:</label
+            >
+            <textarea
+              id="sustainability pledge message"
+              name="sustainability pledge message"
+              rows="4"
+              required
+            ></textarea>
 
+            <label for="eco-friendly experience"
+              >Eco-friendly Experience:</label
+            >
+            <select id="eco-friendly experience" name="eco-friendly experience">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="age-group">Age Group:</label>
+                <select id="age-group" name="age-group">
+                  <option value="18-24">18-24</option>
+                  <option value="25-34">25-34</option>
+                  <option value="35-44">35-44</option>
+                  <option value="45-54">45-54</option>
+                  <option value="55+">55+</option>
+                </select>
+              </fieldset>
+
+              <fieldset>
+                <legend>Current Eco-Friendly Practices</legend>
+                <p>How often do you recycle?</p>
+                <label
+                  ><input type="radio" name="recycling" value="always" />
+                  Always</label
+                >
+                <label
+                  ><input type="radio" name="recycling" value="often" />
+                  Often</label
+                >
+                <label
+                  ><input type="radio" name="recycling" value="sometimes" />
+                  Sometimes</label
+                >
+                <label
+                  ><input type="radio" name="recycling" value="never" />
+                  Never</label
+                >
+
+                <p>
+                  Which energy-saving measures do you use? (Check all that
+                  apply)
+                </p>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="energy-saving"
+                    value="led-bulbs"
+                  />
+                  LED bulbs</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="energy-saving"
+                    value="smart-thermostat"
+                  />
+                  Smart thermostat</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="energy-saving"
+                    value="solar-panels"
+                  />
+                  Solar panels</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="energy-saving"
+                    value="energy-efficient-appliances"
+                  />
+                  Energy-efficient appliances</label
+                >
+
+                <p>
+                  What transportation methods do you use regularly? (Check all
+                  that apply)
+                </p>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="transportation"
+                    value="walking"
+                  />
+                  Walking</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="transportation"
+                    value="cycling"
+                  />
+                  Cycling</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="transportation"
+                    value="public-transit"
+                  />
+                  Public transit</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="transportation"
+                    value="electric-vehicle"
+                  />
+                  Electric vehicle</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="transportation"
+                    value="carpooling"
+                  />
+                  Carpooling</label
+                >
+              </fieldset>
+
+              <fieldset>
+                <legend>Sustainability Interests</legend>
+                <p>
+                  Which areas of sustainability are you most interested in?
+                  (Check all that apply)
+                </p>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interests"
+                    value="renewable-energy"
+                  />
+                  Renewable energy</label
+                >
+                <label
+                  ><input type="checkbox" name="interests" value="zero-waste" />
+                  Zero waste lifestyle</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interests"
+                    value="sustainable-food"
+                  />
+                  Sustainable food and agriculture</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interests"
+                    value="water-conservation"
+                  />
+                  Water conservation</label
+                >
+
+                <p>
+                  How would you describe your level of experience with
+                  eco-friendly living?
+                </p>
+                <label
+                  ><input type="radio" name="experience" value="beginner" />
+                  Beginner</label
+                >
+                <label
+                  ><input type="radio" name="experience" value="intermediate" />
+                  Intermediate</label
+                >
+                <label
+                  ><input type="radio" name="experience" value="advanced" />
+                  Advanced</label
+                >
+              </fieldset>
+
+              <fieldset>
+                <legend>Specific Questions</legend>
+                <label for="energy-consumption"
+                  >Estimated monthly energy consumption (in kWh):</label
+                >
+                <input
+                  type="number"
+                  id="energy-consumption"
+                  name="energy-consumption"
+                  min="0"
+                />
+
+                <label for="challenges"
+                  >What are your main challenges in adopting eco-friendly
+                  practices?</label
+                >
+                <textarea id="challenges" name="challenges" rows="4"></textarea>
+              </fieldset>
+
+              <fieldset>
+                <legend>Future Goals</legend>
+                <label for="eco-goal"
+                  >What's your main eco-friendly goal for the next year?</label
+                >
+                <input type="text" id="eco-goal" name="eco-goal" />
+
+                <p>
+                  Are you willing to participate in community eco-initiatives?
+                </p>
+                <label
+                  ><input
+                    type="radio"
+                    name="community-participation"
+                    value="yes"
+                  />
+                  Yes</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="community-participation"
+                    value="no"
+                  />
+                  No</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="community-participation"
+                    value="maybe"
+                  />
+                  Maybe</label
+                >
+              </fieldset>
+
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id=" contact">
+        <h2>6. Contact Information</h2>
+        <p>
+          For more information; you can reach out @jameswesleyblue@gmail.com
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Eco-Friendly Living. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
